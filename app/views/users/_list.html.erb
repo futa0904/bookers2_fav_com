@@ -1,0 +1,43 @@
+<h2>User info</h2>
+<div>
+  <%= attachment_image_tag user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "no.jpg" %>
+  <table class="table">
+    <tbody>
+      <tr>
+        <th>name</th>
+        <th><%= user.name %></th>
+      </tr>
+      <tr>
+        <th>introduction</th>
+        <th><%= user.introduction	%></th>
+      </tr>
+    </tbody>
+  </table>
+
+    <%= link_to edit_user_path(user), class: "btn btn-outline-secondary btn-block", method: :get do %>
+      <i class="fas fa-user-cog"></i>
+    <% end %>
+
+</div>
+
+<h2>New book</h2>
+
+<%= form_with model: book, local:true do |f| %>
+  <!-- <div class="form-group">-->
+  <!--  <label for="title">Title</label>-->
+  <!--  <input type="text" class="form-control" id="title">-->
+  <!--</div>-->
+  <!--<div class="form-group">-->
+  <!--  <label for="textarea">Opinion</label>-->
+  <!--   <textarea id="textarea" class="form-control"></textarea>-->
+  <!--</div>-->
+  <!--<div class="form-group">-->
+  <!--  <input type="submit" name="commit" value="Create Book" class="btn btn-success" data-disable-with="Create Book">-->
+  <!--</div>-->
+
+  <h4>title</h4>
+  <%= f.text_field :title,  class: "form-control"%>
+  <h4>Opinion</h4>
+  <%= f.text_area :body, class: "form-control" %>
+  <%= f.submit 'Create Book', class: "btn btn-success" %>
+<% end %>

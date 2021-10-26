@@ -1,0 +1,160 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap";
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body{
+    font-family:"Font Awesome 5 Free","Font Awesome 5 Brands";
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.icon1::before {
+  font-family: "Font Awesome 5 Free";
+  content: '\f015';
+  font-size: 15px;
+  font-weight: 900;
+  margin-right: 4px;
+  color: white;
+}
+
+.icon2::before {
+  font-family: "Font Awesome 5 Free";
+  content: '\f0c1';
+  font-size: 15px;
+  font-weight: 900;
+  margin-right: 4px;
+  color: white;
+}
+
+.icon3::before {
+  font-family: "Font Awesome 5 Free";
+  content: '\f234';
+  font-size: 15px;
+  font-weight: 900;
+  margin-right: 4px;
+  color: white;
+}
+
+.icon4::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f2f6";
+  font-size: 15px;
+  font-weight: 900;
+  margin-right: 4px;
+  color: white;
+}
+
+.icon5::before {
+  font-family: "Font Awesome 5 Free";
+  content: '\f0c0';
+  font-size: 15px;
+  font-weight: 900;
+  margin-right: 4px;
+  color: white;
+}
+
+.icon6::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f518";
+  font-size: 15px;
+  font-weight: 900;
+  margin-right: 4px;
+  color: white;
+}
+
+.icon7::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f2f5";
+  font-size: 15px;
+  font-weight: 900;
+  margin-right: 4px;
+  color: white;
+}
+
+.icon8::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f02d";
+
+  font-weight: 900;
+  margin-right: 4px;
+  size: 5x;
+  margin-right: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.navbar-brand {
+  font-size: 1.25rem;
+}
+
+.mx-auto {
+    margin-left: auto !important;
+}
+
+.mr-auto, .mx-auto {
+    margin-right: auto !important;
+}
+
+.mb-3{
+    margin-bottom: 1rem !important;
+}
+
+.foot{
+  margin: 0 auto;
+}
+
+.mt-5{
+    margin-top: 3rem !important;
+}
+
+.log_in{
+  padding-top: 16px;
+}
+
+div.field, div.actions {
+    margin-bottom: 10px;
+}
+
+h2{
+  padding-top: 16px;
+}
+
+
+#notice {
+  color: green;
+}
+
+.alert{
+  padding: 0;
+  color: red;
+}
+
+.error{
+  color: red;
+}
+
+.notice {
+  color: #green;
+}
